@@ -19,3 +19,40 @@
 //     }
    
 // }
+
+//顏色變數
+$darkblue:#465773;
+$white:#F6F6F6;
+
+//=====header
+
+
+//主header
+.first_header{
+background-color: $darkblue;
+display: flex;
+padding: 0px 55px;
+justify-content: space-between;
+
+align-self: stretch;
+align-items: center;
+height: 95px;
+}
+
+.header_title{
+display: flex;
+align-items: center;
+font-family: "Noto Sans TC",Arial, Helvetica, sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+color: $white;
+
+}
+//彰師大logo
+.ncuelogo_con> img{
+    width: 337px;
+    height:95px ;
+}
