@@ -10,7 +10,7 @@
 .header_title {
   display: flex;
   align-items: center;
-  font-family: "Noto Sans TC",Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -21,5 +21,30 @@
 .ncuelogo_con > img {
   width: 337px;
   height: 95px; }
+
+.second_header {
+  display: flex;
+  padding: 5px 55px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
+  border-right: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  background: #F6F6F6; }
+
+.second_header > ul {
+  display: flex;
+  padding-left: 3px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-left: 3px solid #898989;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #898989; }
 
 /*# sourceMappingURL=style.css.map */

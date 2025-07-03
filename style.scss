@@ -23,8 +23,13 @@
 //顏色變數
 $darkblue:#465773;
 $white:#F6F6F6;
-
+$gray: #898989;
+$light-gray:#E0E0E0;
+//字體變數
+$chinese-font:"Noto Sans TC",Arial, Helvetica, sans-serif;
 //=====header
+
+
 
 
 //主header
@@ -33,7 +38,6 @@ background-color: $darkblue;
 display: flex;
 padding: 0px 55px;
 justify-content: space-between;
-
 align-self: stretch;
 align-items: center;
 height: 95px;
@@ -42,7 +46,7 @@ height: 95px;
 .header_title{
 display: flex;
 align-items: center;
-font-family: "Noto Sans TC",Arial, Helvetica, sans-serif;
+font-family: $chinese-font;
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
@@ -51,8 +55,38 @@ letter-spacing: 1.2px;
 color: $white;
 
 }
+
 //彰師大logo
 .ncuelogo_con> img{
     width: 337px;
     height:95px ;
+}
+
+//second-header
+.second_header{
+display: flex;
+padding: 5px 55px;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+font-family: $chinese-font;
+border-right: 1px solid $light-gray;
+border-bottom: 1px solid $light-gray;
+border-left: 1px solid $light-gray;
+background: $white;
+}
+//選單子項
+.second_header> ul{
+display: flex;
+padding-left: 3px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-left: 3px solid $gray;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+color: $gray;
+
 }
