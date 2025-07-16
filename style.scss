@@ -40,48 +40,42 @@ html{
     background-color: $b-color;
     color:$color;
     display: flex;
+    align-items: center;
 }
 //====最外層container
 .container{
  width: 100%;
  height: 100%;   
-// display: flex;
 flex-direction: column;
-align-items: center;
 gap: 150px;
-// background-color: $white;
 @include header($b-color:$white)
 
 }
 
+//=====header
 header{
     width: 100%;
     position: absolute;
 }
-//=====header
+
 
 //主header
 .first_header{
-
 padding: 0px 55px;
 justify-content: space-between;
 align-self: stretch;
-align-items: center;
 height: 95px;
 @include header($color:$white,$b-color:$darkblue)
 }
 
 .header_title{
-display: flex;
-align-items: center;
 font-family: $chinese-font;
 font-size: 1.5rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.2px;
-
-
+@include header($color:$white,$b-color:$darkblue)
 }
 
 //彰師大logo
@@ -92,10 +86,8 @@ letter-spacing: 1.2px;
 
 //second-header
 .second_header{
-
 padding: 5px 55px;
 justify-content: space-between;
-align-items: flex-start;
 align-self: stretch;
 font-family: $chinese-font;
 border-right: 1px solid $light-gray;
@@ -107,42 +99,40 @@ border-left: 1px solid $light-gray;
 
 //選單子項
 .second_header> ul{
-display: flex;
 padding-left: 3px;
 justify-content: center;
-align-items: center;
 gap: 10px;
 border-left: 3px solid $gray;
 font-size: 1.1rem;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-
+@include header($color:$gray,$b-color:$white)
 
 }
 
 //===section1
 .section1{
-display: flex;
 padding: 250px 55px 0px 55px;
 flex-direction: column;
-align-items: center;
 gap: 35px;
 align-self: stretch;
+display: flex;
+align-items: center;
+
 }
 
 .title> h1{
-display: flex;
 padding-left: 6px;
-align-items: center;
 gap: 10px;
 border-left: 3px solid  $blue;
-color: $blue;
 font-size: 2rem;
+display: flex;
+align-items: center;
+color: $blue;
 }
 
 .img-box {
-  
   width: 240px;
   height: 300px;
   background-size: cover; 
@@ -152,7 +142,7 @@ font-size: 2rem;
 }
 
 .section1_content{
-    display: flex;
+display: flex;
 width: 900px;
 flex-direction: column;
 align-items: flex-start;

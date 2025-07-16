@@ -5,11 +5,11 @@ html {
   width: 100%;
   height: 100%;
   flex-direction: column;
-  align-items: center;
   gap: 150px;
   background-color: #F6F6F6;
   color: #465773;
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 header {
   width: 100%;
@@ -19,21 +19,23 @@ header {
   padding: 0px 55px;
   justify-content: space-between;
   align-self: stretch;
-  align-items: center;
   height: 95px;
   background-color: #465773;
   color: #F6F6F6;
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .header_title {
-  display: flex;
-  align-items: center;
   font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.2px;
+  background-color: #465773;
+  color: #F6F6F6;
+  display: flex;
+  align-items: center; }
 
 .ncuelogo_con > img {
   width: 337px;
@@ -42,7 +44,6 @@ header {
 .second_header {
   padding: 5px 55px;
   justify-content: space-between;
-  align-items: flex-start;
   align-self: stretch;
   font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
   border-right: 1px solid #E0E0E0;
@@ -50,36 +51,39 @@ header {
   border-left: 1px solid #E0E0E0;
   background-color: #F6F6F6;
   color: #898989;
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .second_header > ul {
-  display: flex;
   padding-left: 3px;
   justify-content: center;
-  align-items: center;
   gap: 10px;
   border-left: 3px solid #898989;
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: normal; }
+  line-height: normal;
+  background-color: #F6F6F6;
+  color: #898989;
+  display: flex;
+  align-items: center; }
 
 .section1 {
-  display: flex;
   padding: 250px 55px 0px 55px;
   flex-direction: column;
-  align-items: center;
   gap: 35px;
-  align-self: stretch; }
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
 
 .title > h1 {
-  display: flex;
   padding-left: 6px;
-  align-items: center;
   gap: 10px;
   border-left: 3px solid #1276BA;
-  color: #1276BA;
-  font-size: 2rem; }
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: #1276BA; }
 
 .img-box {
   width: 240px;
