@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#"/>
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   
+
 
     <div class="container">
 
@@ -48,7 +48,7 @@
                 <ul data-target="section7">研究計畫</ul>
                 <ul data-target="section8">榮譽事項</ul>
                 <ul data-target="section9">指導研究生</ul>
-                
+
             </div>
 
             <!--漢堡菜單-->
@@ -310,13 +310,13 @@
                         <li>
                             <span class="material-symbols-outlined">book_4</span>工程與生活
                         </li>
-                         <li>
+                        <li>
                             <span class="material-symbols-outlined">book_4</span>工程與生活工程與生活
                         </li>
-                         <li>
+                        <li>
                             <span class="material-symbols-outlined">book_4</span>工程與生活工程與生活
                         </li>
-                         <li>
+                        <li>
                             <span class="material-symbols-outlined">book_4</span>工程與生活工程與生活
                         </li>
                     </ul>
@@ -642,9 +642,17 @@
 
 
         // 導航欄點擊效果 + 對應section捲動（自訂ease-in動畫）
+
         document.querySelectorAll('.second_header ul').forEach(function (item) {
             item.addEventListener('click', function () {
-                // 只執行捲動，不做active樣式
+                // 移除所有ul的active class
+                document.querySelectorAll('.second_header ul').forEach(function (ul) {
+                    ul.classList.remove('active');
+                });
+                // 目前點擊的ul加上active
+                this.classList.add('active');
+
+                // 原本捲動程式碼
                 const targetClass = this.getAttribute('data-target');
                 const section = document.querySelector('.' + targetClass);
                 const header = document.querySelector('header');

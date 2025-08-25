@@ -49,14 +49,15 @@ header {
   display: none; }
 
 .second_header {
-  height: 35px;
-  padding: 5px 80px;
-  justify-content: space-between;
-  align-self: stretch;
+  height: 40px;
+  padding: 5px 60px;
+  justify-content: flex-start;
+  align-self: center;
   font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
   border-right: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 2px solid #E0E0E0;
   border-left: 1px solid #E0E0E0;
+  gap: 40px;
   background-color: #F6F6F6;
   color: #898989;
   display: flex;
@@ -100,9 +101,11 @@ nav div ul li:hover {
 
 .second_header ul {
   padding-left: 3px;
+  letter-spacing: 3px;
   display: flex;
+  white-space: nowrap;
   border-left: 3px solid #898989;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -113,7 +116,13 @@ nav div ul li:hover {
   .second_header ul:hover {
     color: #3DAEDE;
     border-left: 3px solid #3DAEDE;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.3s ease-in; }
+
+.second_header ul.active {
+  color: #1276BA;
+  border-left: 3px solid #1276BA;
+  /* 其他 active 狀態樣式 */ }
 
 .section1 {
   padding: 200px 55px 0px 55px;
