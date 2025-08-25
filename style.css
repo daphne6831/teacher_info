@@ -49,7 +49,8 @@ header {
   display: none; }
 
 .second_header {
-  padding: 5px 55px;
+  height: 35px;
+  padding: 5px 80px;
   justify-content: space-between;
   align-self: stretch;
   font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
@@ -97,12 +98,11 @@ nav div ul li:hover {
   color: #1276BA;
   border-left: 3px solid #1276BA; }
 
-.second_header > ul {
+.second_header ul {
   padding-left: 3px;
-  justify-content: center;
-  gap: 10px;
+  display: flex;
   border-left: 3px solid #898989;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -110,7 +110,7 @@ nav div ul li:hover {
   color: #898989;
   display: flex;
   align-items: center; }
-  .second_header > ul:hover {
+  .second_header ul:hover {
     color: #3DAEDE;
     border-left: 3px solid #3DAEDE;
     cursor: pointer; }
@@ -338,8 +338,8 @@ nav div ul li:hover {
   position: fixed;
   bottom: 400px;
   right: 30px;
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   background-color: #F6F6F6;
   border: 2px solid #1276BA;
   color: #1276BA;
@@ -370,9 +370,9 @@ nav div ul li:hover {
     margin-bottom: -0.1em;
     line-height: 1; }
   .top_button span:last-child {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-top: -0.5em;
+    margin-top: -0.55em;
     letter-spacing: 1px;
     line-height: 1; }
 
