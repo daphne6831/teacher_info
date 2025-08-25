@@ -90,7 +90,7 @@ border-left: 1px solid $light-gray;
 //隱藏手機板nav
 nav{
   display: none;
-  // visibility: hidden;
+  
   background-color: #E4EBF2;
    width: 100vw;         /* 滿寬 */
   height: 100vh;    
@@ -108,12 +108,12 @@ nav{
 nav div ul {
   list-style: none;
   padding-left: 15px;
-  // border-left: 3px solid #123466;
+
   font-size: 1.1rem;
-  // font-weight: 600;
+ 
   width: fit-content;
   margin: 0 70px;
-  // text-align: center;
+  
 }
 
 nav div ul li  {
@@ -128,7 +128,7 @@ nav div ul li  {
 nav div ul li:hover {
   color: $blue;
   border-left: 3px solid $blue;
-  // padding-left: 8px;
+ 
 }
 
 
@@ -152,13 +152,7 @@ nav div ul li:hover {
   }
 }
 
-// .second_header ul{
-//  list-style: none;
-//   margin: 0;
-//   padding: 0;
-//   white-space: nowrap;
-//   overflow-x: auto;
-// }
+
 //===section1
 .section1{
 padding: 200px 55px 0px 55px; // 調整padding-top，為固定header留出空間
@@ -447,9 +441,7 @@ align-self: stretch;
       font-size: 1.2rem;
       color: $black;
       font-weight: 500;
-      // padding: 8px 0;
-      // position: relative;
-      // padding-left: 20px;
+     
        display: flex;
       align-items: center;
       span{
@@ -457,13 +449,7 @@ align-self: stretch;
         
       }
       
-      // &::before {
-      //   content: "•";
-      //   position: absolute;
-      //   left: 0;
-      //   color: $blue;
-      //   font-size: 1.2rem;
-      // }
+    
     }
   }
 }
@@ -551,18 +537,13 @@ align-self: stretch;
         font-size: 1.2rem;
         font-weight: 600;
         margin: 0;
-        // margin-bottom: 15px;
+        
       }
       h4{
          margin: 0;
       }
       
-      // p {
-      //   font-family: $chinese-font;
-      //   font-size: 0.9rem;
-      //   line-height: 1.5;
-      //   margin-bottom: 8px;
-      // }
+  
       .footer_left_con{
         display: inline-flex;
         gap: 50px;
@@ -630,7 +611,6 @@ align-self: stretch;
 }
 
   .footer_bottom {
-    // border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding: 5px 100px;
     text-align: center;
     
@@ -860,7 +840,6 @@ height: 30px;
 
 
 // 多餘規則移除：避免把內層連結隱藏
-// .ncuelogo_con>a:last-child{ visibility: hidden; }
 
 // 表格第一欄（編號）不換行
 .course_table th:first-child,
